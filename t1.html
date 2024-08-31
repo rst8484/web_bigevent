@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+            /* Flex container for big boxes */
+            flex-direction: column;
+            /* Big boxes are stacked vertically */
+        }
+
+        .big-box {
+            display: flex;
+            /* Flex container for small boxes */
+            margin-bottom: 10px;
+            /* Space between big boxes */
+        }
+
+        .big-box1 {
+            display: flex;
+            /* Flex container for small boxes */
+            margin-bottom: 10px;
+            /* Space between big boxes */
+        }
+
+        .small-box {
+            flex: 1;
+            /* Each small box will take equal width */
+            margin-right: 10px;
+            /* Space between small boxes */
+            text-align: center;
+            /* Center the text inside small boxes */
+            /* Additional styling for small boxes */
+        }
+
+        /* Optional: Clear the margin for the last small box in each big box */
+        .big-box:last-child .small-box {
+            margin-right: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="big-box">
+            <div class="small-box">小盒子1</div>
+            <div class="small-box">小盒子2</div>
+            <div class="small-box">小盒子3</div>
+        </div>
+        <div class="big-box1">
+            <div class="small-box">小盒子4</div>
+            <div class="small-box">小盒子5</div>
+
+        </div>
+        <!-- 更多的大盒子 -->
+    </div>
+
+</body>
+
+</html>
