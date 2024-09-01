@@ -4,7 +4,7 @@ var $image = $('#image')
 // 配置选项
 const options = {
     // 纵横比
-    aspectRatio: 4/3,
+    aspectRatio: 1,
     // 指定预览区域
     preview: '.img-preview'
 }
